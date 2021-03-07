@@ -1,3 +1,0 @@
-This is test for git 1
-master与branch1合并后的内容
-
