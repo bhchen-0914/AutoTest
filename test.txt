@@ -1,2 +1,0 @@
-This is test for git 1
-这是branch1分支上的内容
