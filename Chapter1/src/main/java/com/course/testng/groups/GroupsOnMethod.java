@@ -45,11 +45,11 @@ public class GroupsOnMethod {
 
     @BeforeGroups("client")
     public void beforeGroupsOnClient(){
-        System.out.println("服务端组方法运行前所运行的方法beforeGroupsOnClient");
+        System.out.println("客户端组方法运行前所运行的方法beforeGroupsOnClient");
     }
 
     @AfterGroups("client")
     public void afterGroupsOnClient(){
-        System.out.println("服务端组方法运行后所运行的方法afterGroupsOnClient");
+        System.out.println("客户端组方法运行后所运行的方法afterGroupsOnClient");
     }
 }
