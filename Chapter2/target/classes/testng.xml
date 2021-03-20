@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+可指定方法
+-->
+<suite name="自定义套件接口测试">
+    <test name="测试模块">
+        <classes>
+            <class name="com.course.extentreports.TestMethodDemo"/>
+            <methods>
+<!--                <include name="testCase1"/>-->
+                <include name="testCase2"/>
+                <include name="testCase3"/>
+                <include name="testCase4"/>
+            </methods>
+
+        </classes>
+    </test>
+
+     设置监听器
+    <listeners>
+<!--        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+<!--        自定义的监听器-->
+    <listener class-name="com.course.extentreports.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>

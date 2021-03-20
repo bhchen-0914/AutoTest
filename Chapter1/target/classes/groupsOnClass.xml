@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="groupsOnClassSuite">
+    <!-- 运行全部case -->
+<!--    <test name="runAll">-->
+<!--        <classes>-->
+<!--            <class name="com.course.testng.groups.GroupsOnClass1"/>-->
+<!--            <class name="com.course.testng.groups.GroupsOnClass2"/>-->
+<!--            <class name="com.course.testng.groups.GroupsOnClass3"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <!-- 只运行testGroup1组中的用例 -->
+    <test name="onlyRunTestGroup1">
+        <groups>
+            <run>
+                <include name="testGroup1"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.course.testng.groups.GroupsOnClass1"/>
+            <class name="com.course.testng.groups.GroupsOnClass2"/>
+            <class name="com.course.testng.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+
+    <!-- 不运行testGroup2组中的用例 -->
+<!--    <test name="notRunTestGroup2">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <exclude name="testGroup2"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+<!--        <classes>-->
+<!--            <class name="com.course.testng.groups.GroupsOnClass1"/>-->
+<!--            <class name="com.course.testng.groups.GroupsOnClass2"/>-->
+<!--            <class name="com.course.testng.groups.GroupsOnClass3"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
