@@ -1,0 +1,30 @@
+[
+  {
+    "description": "模拟一个没有参数的get请求",
+    "request": {
+      "uri": "/getDemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "这是1个没有参数的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=utf8"
+      }
+    }
+  },{
+    "description": "模拟一个带参数的get请求",
+    "request": {
+      "uri": "/getWithParam",
+      "method": "get",
+      "queries":{
+        "name": "bhchen3",
+        "age": "22"}
+    },
+    "response": {
+      "text": "模拟带参数的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=utf-8"
+      }
+    }
+}
+]

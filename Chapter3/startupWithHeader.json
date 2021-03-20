@@ -1,0 +1,22 @@
+[
+  {
+    "description": "这是1个带header信息的post请求",
+    "request": {
+      "uri": "/post/with/headers",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "username": "bhchen3",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "json": {
+        "login": "success",
+        "status": "onLine"
+      }
+    }
+  }
+]
