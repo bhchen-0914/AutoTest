@@ -1,1 +1,1 @@
-java -jar ./moco-runner-1.1.0-standalone.jar https -p 8888 -c (json配置文件)
+java -jar ./moco-runner-1.1.0-standalone.jar http -p 8888 -c (json配置文件)
