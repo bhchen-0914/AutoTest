@@ -18,7 +18,8 @@
     "uri": "/post/with/cookies",
     "method": "post",
     "cookies": {
-      "login": "true"
+      "login": "true",
+      "set": "200"
     },
     "json": {
       "name": "bhchen3",
@@ -32,5 +33,19 @@
       "status": 1
     }
   }
-}
+},
+  {
+    "description": "返回带cookies信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "text": "这个请求返回了cookies信息",
+      "cookies": {
+        "login": "true",
+        "set": "200"
+      }
+    }
+  }
 ]

@@ -14,16 +14,16 @@
   },{
     "description": "模拟一个带参数的get请求",
     "request": {
-      "uri": "/getWithParam",
+        "uri": "/getWithParam",
       "method": "get",
       "queries":{
         "name": "bhchen3",
         "age": "22"}
     },
     "response": {
-      "text": "模拟带参数的get请求",
+      "text": "模拟一个带参数的get请求",
       "headers":{
-        "Content-Type":"text/html;charset=utf-8"
+        "Content-Type":"text/html;charset=UTF-8"
       }
     }
 }
