@@ -16,6 +16,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+<<<<<<< HEAD
+=======
+import java.util.ArrayList;
+>>>>>>> origin/master
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
