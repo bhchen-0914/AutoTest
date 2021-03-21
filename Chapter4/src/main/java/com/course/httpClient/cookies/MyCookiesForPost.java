@@ -27,7 +27,7 @@ public class MyCookiesForPost {
     public void beforeTest(){
         bundle = ResourceBundle.getBundle("application", Locale.CHINA); //配置显示中文
         url = bundle.getString("test.url");
-        uri = bundle.getString("test.post.withCookies");
+        uri = bundle.getString("getCookies.uri");
         get = new HttpGet(this.url+this.uri);
     }
 
