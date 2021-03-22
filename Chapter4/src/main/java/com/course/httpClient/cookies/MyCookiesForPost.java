@@ -1,16 +1,23 @@
 package com.course.httpClient.cookies;
 
+import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.cookie.Cookie;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.io.Closeable;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -51,14 +58,37 @@ public class MyCookiesForPost {
             String value = cookie.getValue();
             System.out.println("cookie name:"+name + " cookie value:"+value);
         }
-
+        client.close();
     }
 
     @Test(dependsOnMethods = {"testGetCookies"})
-    public void testPostWithCookies(){
+    public void testPostWithCookies() throws IOException{
+        String result;
+        //拼接测试链接
         String testUrl = this.url + this.bundle.getString("test.post.withCookies");
         HttpPost post = new HttpPost(testUrl);
-
+        //设置参数
+        JSONObject jsonParam = new JSONObject();
+        jsonParam.put("name","bhchen3");
+        jsonParam.put("age","20");
+        //设置header 请求头信息
+        post.setHeader("content-type","application/json");
+        //post请求添加参数
+        StringEntity entity = new StringEntity(jsonParam.toString(),"utf-8");
+        post.setEntity(entity);
+        //创建httpclient实例并设置cookies
+        CloseableHttpClient client = HttpClients.custom().setDefaultCookieStore(this.store).build();
+        HttpResponse response = client.execute(post);
+        int statusCode = response.getStatusLine().getStatusCode();
+        //保留响应信息
+        result = EntityUtils.toString(response.getEntity(),"utf-8");
+        JSONObject jsonResult = new JSONObject(result);
+        String param1Result = jsonResult.get("bhchen3").toString();
+        String param2Result = jsonResult.get("status").toString();
+        //断言
+        Assert.assertEquals(statusCode,200);
+        Assert.assertEquals(param1Result,"success");
+        Assert.assertEquals(param2Result,"1");
     }
 
 }

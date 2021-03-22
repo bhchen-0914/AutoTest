@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="Test For HttpClient">
+    <test name="get/post test">
+         <classes>
+             <class name="com.course.httpClient.cookies.MyCookiesForGet"/>
+             <class name="com.course.httpClient.cookies.MyCookiesForPost"/>
+         </classes>
+    </test>
+
+    <listeners>
+       <listener class-name="com.course.httpClient.cookies.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>

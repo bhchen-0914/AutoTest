@@ -71,7 +71,7 @@ public class MyCookiesForGet {
             String value = cookie.getValue();
             System.out.println("cookie name:"+name + " cookie value:"+value);
         }
-
+        client.close();
     }
 
     /**
@@ -96,7 +96,7 @@ public class MyCookiesForGet {
         } else {
             System.out.println("错误登录状态 "+ statusCode);
         }
-
+        client.close();
     }
 
 }
