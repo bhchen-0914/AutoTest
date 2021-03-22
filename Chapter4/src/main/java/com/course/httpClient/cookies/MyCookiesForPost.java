@@ -85,6 +85,7 @@ public class MyCookiesForPost {
         JSONObject jsonResult = new JSONObject(result);
         String param1Result = jsonResult.get("bhchen3").toString();
         String param2Result = jsonResult.get("status").toString();
+        client.close();
         //断言
         Assert.assertEquals(statusCode,200);
         Assert.assertEquals(param1Result,"success");

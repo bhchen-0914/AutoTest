@@ -45,10 +45,11 @@ public class MyCookiesForGet {
     @Test
     public void testGetResult() throws IOException {
         String result;
-        HttpClient client = HttpClients.createDefault();
+        CloseableHttpClient client = HttpClients.createDefault();
         HttpResponse response = client.execute(get);
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
+        client.close();
     }
 
     /**
