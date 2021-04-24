@@ -253,3 +253,24 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 2021-04-24 23:25:12.398 [http-nio-8899-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
 2021-04-24 23:25:12.459 [http-nio-8899-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2021-04-24 23:25:12.705 [http-nio-8899-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-04-24 23:37:03.841 [main] INFO  com.course.Application - Starting Application on bhchen with PID 14896 (E:\workspace\muke\AutoTest\Chapter8\target\classes started by bhchen in E:\workspace\muke\AutoTest)
+2021-04-24 23:37:03.844 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2021-04-24 23:37:04.465 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2021-04-24 23:37:04.629 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-24 23:37:04.962 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8899 (http)
+2021-04-24 23:37:04.970 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-24 23:37:04.970 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-04-24 23:37:05.054 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-24 23:37:05.054 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1173 ms
+2021-04-24 23:37:05.579 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 23:37:05.663 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-04-24 23:37:05.684 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-04-24 23:37:05.698 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-04-24 23:37:05.706 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-04-24 23:37:05.881 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8899 (http) with context path ''
+2021-04-24 23:37:05.883 [main] INFO  com.course.Application - Started Application in 2.332 seconds (JVM running for 2.752)
+2021-04-24 23:37:17.758 [http-nio-8899-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 23:37:17.758 [http-nio-8899-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-04-24 23:37:17.762 [http-nio-8899-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2021-04-24 23:37:17.827 [http-nio-8899-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-04-24 23:37:18.082 [http-nio-8899-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
